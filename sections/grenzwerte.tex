@@ -1,0 +1,103 @@
+	\subsection{Folgen \color{red} S19,470}
+
+		
+
+		
+		
+		\subsubsection{Limes Inferior und Superior}
+		Der Limes superior einer Folge $x_n \subset \mathbb{R}$ ist der größte Grenzwert konvergenter Teilfolgen $x_{n_k}$ der Folge ${x_n}$ \\
+		Der Limes inferior einer Folge $x_n \subset \mathbb{R}$ der kleinste Grenzwert konvergenter Teilfolgen $x_{n_k}$ der Folge $x_n$
+		\hrule
+		%-------------------------------------------------------------------------------------------------------------------------------------------------
+		\subsection{Grenzwerte von Funktionen \color{red} S54ff}
+		\subsubsection{Rechenregeln mit uneigentlichen Grenzwerten \color{red}S58}
+		Die eigentlichen (reellen) Grössen wie 0,1, oder $g\in \mathbb R$ bzw. uneigentliche Grössen $\pm\infty$ sind als Grenzwerte bzw. als bestimmtes Divergenzverhalten von Funktionen zu interpretieren.\	
+		
+		\paragraph{Bestimmte Formen}\
+		
+		\begin{tabulary}{.5\textwidth}{L|L|L|L|L|L}
+			für $g\in \mathbb R$	&	für $g\in \mathbb R$	&	für $g\in \mathbb R-\{0\}$	&	für $g\in \mathbb R-\{0\}$	&	für $g\in \mathbb R-\{0\}$ & sonstiges\\ \hline
+			$\infty+\infty=\infty$	&$\frac{1}{\infty}=0$		&	$\frac{1}{0+}=\infty$& $\infty\cdot \infty=\infty$& $\frac{\infty}{g}= {\begin{cases} \infty, & g>0 \\ -\infty,& g<0 \end{cases}}$ & $0 \cdot 0 = 0$\\ 
+						
+			$g+\infty=\infty$		&$\frac{g}{\infty}=0$		&	$\frac{1}{0-}=-\infty$& $-\infty\cdot \infty=-\infty$ & & $\frac{0}{\infty} = 0$\\
+			$-\infty-\infty=-\infty$&$\frac{\infty}{0+}=\infty$	& $\frac{g}{0+}= \begin{cases} +\infty, & g>0 \\ -\infty,& g<0 \end{cases}$ &
+			$g\cdot \infty= \begin{cases} +\infty, & g>0 \\ -\infty,& g<0 \end{cases}$ & & $0+\infty=\infty$\\
+			
+			$g-\infty=-\infty$		&$\frac{\infty}{0-}=-\infty$& $\frac{g}{0-}= \begin{cases} -\infty, & g>0 \\ +\infty,& g<0 \end{cases}$ & & &$0-\infty=$\\		%0-\infty=-\infty, wegen Tabellenbreite so nicht machbar
+		\end{tabulary}
+		\hrule
+		%-------------------------------------------------------------------------------------------------------------------------------------------------
+		\paragraph{Unbestimmte Formen {\color{red} S57}}\
+		
+			\begin{minipage}{.5\columnwidth}
+				Für Grenzwerte, die auf einen unbestimmten Ausdruck der Form $\frac{0}{0}$ oder
+				$\frac{\infty}{\infty}$ führen, gilt die Regel von \textbf{l'Hospital}
+				\begin{equation*}
+				\lim _{x \rightarrow x_{0}} \frac{g(x)}{h(x)}=\lim _{x \rightarrow x_{0}} \frac{g^{\prime}(x)}{h^{\prime}(x)}
+				\end{equation*}
+			\end{minipage}
+			\hspace{2mm}
+			\vline
+			\hspace{2mm}
+			\begin{minipage}{.5\columnwidth}
+				\begin{tabulary}{1\textwidth}{L|L|L}
+				 $\text{Funktion} f(x)$	  & $\lim _{x \rightarrow x_{0}} f(x)$       & $\text{Elementare Umformung}$                                                        \\ \hline
+				 $g(x) \cdot h(x)$      & $0 . \infty \text{ bzw } \infty \cdot 0$ & $\frac{g(x)}{\frac{1}{h(x)}} \quad \text{ bzw } \quad \frac{h(x)}{\frac{1}{g(x)}}$ \\ \hline
+				 $g(x)-h(x)$            & $\infty-\infty $                           & $\frac{\frac{1}{h(x)}-\frac{1}{g(x)}}{\frac{1}{g(x) \cdot h(x)}}$                    \\ \hline
+				 $g(x)^{h(x)}$          & $0^{0}, \infty^{0}, 1^{\infty}$            & $e^{h(x) \cdot \ln g(x)}$                                                       
+				\end{tabulary}
+			\end{minipage}
+
+				
+		
+		
+%		Für die folgenden Formen gibt es keine allgemeinen Regeln; das Grenzverhalten ist abhängig von den beteiligten Funktionen und mittels speziellen Methoden (z.B. B.H.) zu überprüfen bzw. zu berechnen.
+%		\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}}
+%			$\dfrac{0}{0}=?$	&	$\dfrac{\infty}{\infty}=?$	&	$0\cdot \infty =?$	&	$1^{\infty}=?$ (nur bei lim, sonst konstant)\\
+%			$\infty-\infty=?$	&	$0^{0}=?$	&	$\infty ^{0}$	&\\
+%		\end{tabular}
+	
+		\hrule
+		
+		
+		\subsubsection{Berechnung von Grenzwerten \color{red}S56} 
+		Technik des Erweiterns:$\lim\limits_{n\to \infty} \frac{n}{n^{2}}\Rightarrow $Erweitern mit$\frac{1}{n^{2}} \Rightarrow \lim\limits_{n\to \infty} \dfrac{\frac{n}{n^{2}}}{\frac{n^{2}}{n^{2}}} =\lim\limits_{n\to \infty}\frac{1}{n}=0$\\
+		Binomische Formel: $ \lim\limits_{n\to \infty}\sqrt{n+1}-\sqrt{n}= \lim\limits_{n\to \infty}\frac{(\sqrt{n+1}-\sqrt{n})(\sqrt{n+1}+\sqrt{n})}{\sqrt{n+1}+\sqrt{n}}=  
+		\lim\limits_{n\to \infty}\frac{n+1-n}{\sqrt{n+1}+\sqrt{n}}= 0$
+		
+
+		
+		\subsubsection{Spezielle Grenzwerte \color{red}S58}
+		
+		\begin{minipage}{10cm}		
+			\begin{tabulary}{10cm}{LLL}
+				
+				$\lim\limits_{x\to 0}\frac{sinx}{x}=1$							& $\lim\limits_{x\to 0+}x ln x=0$ 												& 	$\lim\limits_{x\to\infty}\sqrt[x]{x}=1$\\
+				
+				$\lim\limits_{\alpha \to0}\frac{(1+x)^{\alpha}-1}{x}=\alpha$	&  $\lim\limits_{x\to 1}\frac{lnx}{x-1}=1$													& 	$\lim\limits_{x\to\infty}\frac{a^{x}-1}{x}=lna$		\\ 
+				
+				$\lim\limits_{x\to 0}\frac{log_{a}(x+1)}{x}=\frac{1}{ln a}$ 	& $\lim\limits_{x\to\infty}\frac{(lnx)^{\alpha}}{x^{\beta}}=0$ 							& 	$\lim\limits_{x\to\infty}ln\sqrt{\frac{x^{2}-4}{x-2}}=ln2$	\\
+				
+				$\lim\limits_{x\to 0}\frac{e^{x}-1}{x}=1$ 						& $\lim\limits_{x\to\infty}\frac{x^{\alpha}}{a^{\beta}}=0 \ (\alpha>1;\alpha,\beta>0)$	&	$\lim\limits_{n\to\infty}\frac{x^{n}}{n!}=0$ \\
+				
+				$\lim\limits_{x\to 0}\frac{x}{1-e^{x}}=1$						& $\lim\limits_{x\to \infty} \sum\limits_{k=0}^{n} q^{k} = {\begin{cases} +\infty, 		& 	q \geq 1 \\ 
+				\frac{1}{1-q},													& |q|<1 \end{cases}}  $ 																&	$\lim\limits_{x\to\infty}\left(1+\frac{a}{x}\right)^{x}=e^{a}$	\\
+				
+				$\lim\limits_{x\to 0}(1+x)^{\frac{1}{x}}=e$ 								& $\lim\limits_{x\to\infty}\frac{x^{k}}{q^{x}}=0 (q>1;k\in\mathbb{N})$ 					&  $\lim\limits_{x\to\infty}\sqrt[x]{p}=1$	\\
+			\end{tabulary}\\[2mm]
+		bei $x \to \infty \text{ gilt: } log_{Basis}(x) < \sqrt{x} < x < a^{x} < x! \Rightarrow \text{ Wachstum gegen: } \infty \qquad (|a|>1 )$	\\
+		\end{minipage}
+		\vrule
+		\hspace{1mm}
+		\begin{minipage}{4cm}
+			%\subsubsection{Wichtige Regeln}
+			$a_n=q^n  \overset{n \rightarrow \infty}{\longrightarrow}  \begin{cases} 0 & |q|<1 \\ 1 & q=1 \\ \pm \infty & q < -1  \\  + \infty & q > 1\end{cases}$ \\
+			$a_n=\frac{1}{n^k}\rightarrow 0$ \qquad $\forall k \ge 1$\\
+			$a_n=\left(1+\frac{c}{n}\right)^n \rightarrow e^c$ \\
+			$a_n=n\left(c^{\frac1{n}}-1\right) = \ln c$\\
+			$a_n=\frac{n^2}{2^n}\ra 0$ \quad ($2^n \ge n^2$  $\forall n\ge 4$) \\
+			$\lim\limits_{n\to\infty}n^{\frac{1}{n}}=\lim\limits_{n\to\infty}\sqrt[n]{n}=1$
+		\end{minipage}
+		
+		\hrule
+		%-------------------------------------------------------------------------------------------------------------------------------------------------
